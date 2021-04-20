@@ -16,12 +16,13 @@ This application will allow the user to quickly and easily create a README file 
 
 ### Installation
 ```
-* run command line npm i
-* run command line node server.js
+- run command line npm i
+- run command line node index.js
 
 ```
 
 ### Technologies Used:
  - HTML
  - JavaScript 
+ - Node.js
  - Inquirer package
