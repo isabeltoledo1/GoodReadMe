@@ -1,8 +1,8 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
-const path = require('path');
-const axios = require("axios");
+//const path = require('path');
+//const axios = require("axios");
 
 
 // array of questions for user
@@ -10,7 +10,14 @@ const questions = [
     {
         type: "input",
         message: "Type in your GitHub username",
-        name: "username"
+        name: "github"
+      },
+
+      {
+        type: "input",
+        message: "What is your email?",
+        name: "email",
+        default: "none@email.com"
       },
     
       {
@@ -51,8 +58,7 @@ const questions = [
     
       {
         type: "input",
-        message:
-          "please enter git hub user names of all contributors (If there are mulitple contributors, seperate names with comma and no space! )",
+        message:"please enter git hub user names of all contributors (If there are mulitple contributors, seperate names with comma and no space! )",
         name: "contributors",
         default: "isabel toledo",
       },
